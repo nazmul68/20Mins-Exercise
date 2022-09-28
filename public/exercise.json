@@ -1,0 +1,44 @@
+[
+    {
+      "id": "1a",
+      "exercise": "Dumbbell Workout",
+      "benifits": "Weight lifting with dumbbells lowers your risk of heart attack, stroke, and cardiovascular disease. Since strength training builds lean muscle mass.",
+      "time": 5,
+      "img": "https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5005.jpg?size=626&ext=jpg&ga=GA1.2.1677588451.1658468589"
+    },
+    {
+      "id": "2b",
+      "exercise": "Push Ups",
+      "benifits": "Push-ups help reduce belly fat if and only if the calories burned during exercise are enough to convert fat loss and increase abdominal muscle.",
+      "time": 3,
+      "img": "https://img.freepik.com/free-photo/young-powerful-sportsman-training-push-ups-dark-wall_176420-537.jpg?w=740&t=st=1664390670~exp=1664391270~hmac=887d7a16ccde9d473eec4f532d726fa765a65326f0cbf7cece060025daa81de0"
+    },
+    {
+      "id": "3c",
+      "exercise": "Sit Ups",
+      "benifits": "A flexible back and hips improve circulation, as well as reduce stress. You also build a strong core and keep your hips, spine, and shoulders aligned.",
+      "time": 3,
+      "img": "https://img.freepik.com/free-photo/hard-work-six-pack_329181-14144.jpg?w=740&t=st=1664391407~exp=1664392007~hmac=43b641017d189c67b1d13abe1c90cb1dacb1e4e9d73863bba6f068388bce188f"
+    },
+    {
+      "id": "4d",
+      "exercise": "Doing Planks",
+      "benifits": "Planks are perfect for burning belly fat because they engage multiple muscles at once, boosting the metabolic rate and benefiting core strength.",
+      "time": 2,
+      "img": "https://img.freepik.com/free-photo/full-shot-man-doing-plank_23-2149036348.jpg?w=740&t=st=1664391935~exp=1664392535~hmac=52f47bda89e19c0004461e10967b31c2ec8cc5271b319df9e72c1200341f1614"
+    },
+    {
+      "id": "5e",
+      "exercise": "Bicycling workout",
+      "benifits": "It strengthens your lower body, including your legs, hips, and glutes. If you want a workout that's gentle on your back, hips, knees, and ankles.",
+      "time": 4,
+      "img": "https://img.freepik.com/free-photo/guy-training-home_1157-45667.jpg?w=740&t=st=1664392541~exp=1664393141~hmac=afc54af17fbab888af4f89c80b849f27264f5372d5176166179684abce6e4fcb"
+    },
+    {
+      "id": "6f",
+      "exercise": "Doing Squats",
+      "benifits": "Squats are such a good exercise for burning body fat and building lean muscle that if you're doing them regularly, you're highly likely to start.",
+      "time": 3,
+      "img": "https://img.freepik.com/free-photo/full-shot-man-doing-squat_23-2149249451.jpg?w=740&t=st=1664392781~exp=1664393381~hmac=cea2430d7bbe9d53c62bab9a43eb3bc8eddfaf9171a912ea11acc1c4f224f0d2"
+    }
+  ]
