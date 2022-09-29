@@ -1,4 +1,4 @@
-import Cart from "../../Cart/Cart";
+import Cart from "../Cart/Cart";
 
 const ExerciseCarts = (props) => {
   const { exerciseCarts, handleExerciseTime } = props;

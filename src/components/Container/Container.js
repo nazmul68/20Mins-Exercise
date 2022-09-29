@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./Container.css";
 
-import ExerciseCarts from "../ExerciseCarts/ExerciseCarts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
 import PhysicianInfo from "../PhysicianInfo/PhysicianInfo";
-import AddBreak from "../../AddBreak/AddBreak";
-import ExerciseTime from "../../ExerciseTime/ExerciseTime";
-import BreakTime from "../../BreakTime/BreakTme";
 import QuestionAns from "../QuestionAns/QuestionAns";
+import AddBreak from "../AddBreak/AddBreak";
+import ExerciseTime from "../ExerciseTime/ExerciseTime";
+import BreakTime from "../BreakTime/BreakTime";
+import ExerciseCarts from "../ExerciseCarts/ExerciseCarts";
 
 const Container = () => {
   const [exerciseCarts, setExerciseCarts] = useState([]);
@@ -49,6 +49,9 @@ const Container = () => {
           <h1 className="text-primary fst-italic">20Mins-Exercise</h1>
         </div>
         <h5 className="my-3 ms-4 text-light">Let's try these exercise!</h5>
+        {/* <ExerciseCarts
+          
+        ></ExerciseCarts> */}
         <ExerciseCarts
           exerciseCarts={exerciseCarts}
           handleExerciseTime={handleExerciseTime}
