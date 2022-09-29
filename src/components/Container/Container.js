@@ -9,6 +9,7 @@ import AddBreak from "../AddBreak/AddBreak";
 import ExerciseTime from "../ExerciseTime/ExerciseTime";
 import BreakTime from "../BreakTime/BreakTime";
 import ExerciseCarts from "../ExerciseCarts/ExerciseCarts";
+import Toast from "../Toast/Toast";
 
 const Container = () => {
   const [exerciseCarts, setExerciseCarts] = useState([]);
@@ -64,6 +65,7 @@ const Container = () => {
         <h5 className="text-light mt-5 ps-3">Exercise Details</h5>
         <ExerciseTime exerciseTime={exerciseTime}></ExerciseTime>
         <BreakTime breakTime={breakTime}></BreakTime>
+        <Toast></Toast>
       </div>
       <div>
         <QuestionAns></QuestionAns>
