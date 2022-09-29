@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import ExerciseTime from "../ExerciseTime/ExerciseTime";
 
 const Cart = (props) => {
-  console.log(props);
-  const { exercise, benifits, time, img } = props.cart;
+  const { exercise, benifits, time, img, id } = props.cart;
+  const { handleExerciseTime } = props;
   return (
     <div>
       <div className="col">
@@ -13,11 +14,17 @@ const Cart = (props) => {
               <h5 className="card-title">{exercise}</h5>
               <p className="card-text">{benifits}</p>
               <p>Time required: {time} min</p>
-              <button className="btn btn-primary w-100">Add to list</button>
+              <button
+                onClick={() => handleExerciseTime(id)}
+                className="btn btn-primary w-100"
+              >
+                Add to list
+              </button>
             </div>
           </div>
         </div>
       </div>
+      {}
     </div>
   );
 };
