@@ -8,6 +8,7 @@ import PhysicianInfo from "../PhysicianInfo/PhysicianInfo";
 import AddBreak from "../../AddBreak/AddBreak";
 import ExerciseTime from "../../ExerciseTime/ExerciseTime";
 import BreakTime from "../../BreakTime/BreakTme";
+import QuestionAns from "../QuestionAns/QuestionAns";
 
 const Container = () => {
   const [exerciseCarts, setExerciseCarts] = useState([]);
@@ -54,12 +55,15 @@ const Container = () => {
         ></ExerciseCarts>
       </div>
 
-      <div className="calculate-section col-sm-1 col-md-3 bg-dark py-5 mx-auto me-md-0">
+      <div className="calculate-section col-sm-1 col-md-3 bg-dark py-5 mx-auto me-md-0 mb-5">
         <PhysicianInfo></PhysicianInfo>
         <AddBreak setBreakTime={setBreakTime}></AddBreak>
         <h5 className="text-light mt-5 ps-3">Exercise Details</h5>
         <ExerciseTime exerciseTime={exerciseTime}></ExerciseTime>
         <BreakTime breakTime={breakTime}></BreakTime>
+      </div>
+      <div>
+        <QuestionAns></QuestionAns>
       </div>
     </div>
   );
