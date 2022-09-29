@@ -13,10 +13,13 @@ const Cart = (props) => {
             <div className="cart-information p-2">
               <h5 className="card-title">{exercise}</h5>
               <p className="card-text">{benifits}</p>
-              <p>Time required: {time} min</p>
+              <p>
+                Time required:{" "}
+                <span className="text-warning fw-bold">{time}</span> min
+              </p>
               <button
                 onClick={() => handleExerciseTime(id)}
-                className="btn btn-primary w-100"
+                className="btn btn-primary w-100 fw-bold fst-italic"
               >
                 Add to list
               </button>

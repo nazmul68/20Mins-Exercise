@@ -1,14 +1,15 @@
 import React from "react";
-import "./BreakTme.css";
+import "./BreakTime.css";
 
-const BreakTme = () => {
+const BreakTime = (props) => {
+  const { breakTime } = props;
   return (
     <div>
       return (
       <div className="break-time text-light d-flex justify-content-evenly pt-3 pb-2 mt-4 rounded">
-        <h6>Break time</h6>
+        <h6>Break time:</h6>
         <p>
-          <span>0</span> min
+          <span className="text-warning fw-bold">{breakTime}</span> min
         </p>
       </div>
       );
@@ -16,4 +17,4 @@ const BreakTme = () => {
   );
 };
 
-export default BreakTme;
+export default BreakTime;

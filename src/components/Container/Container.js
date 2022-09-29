@@ -7,18 +7,28 @@ import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
 import PhysicianInfo from "../PhysicianInfo/PhysicianInfo";
 import AddBreak from "../../AddBreak/AddBreak";
 import ExerciseTime from "../../ExerciseTime/ExerciseTime";
-import BreakTme from "../../BreakTime/BreakTme";
+import BreakTime from "../../BreakTime/BreakTme";
 
 const Container = () => {
   const [exerciseCarts, setExerciseCarts] = useState([]);
 
   const [exerciseTime, setExerciseTime] = useState([0]);
 
-  const [breakTime, setBreakTime] = useState([]);
+  const [breakTime, setBreakTime] = useState([0]);
+
+  useEffect(() => {
+    // console.log(breakTime);
+    const savedTime = localStorage.getItem("breakTime");
+    if (savedTime) {
+      setBreakTime(savedTime);
+    } else {
+      setBreakTime(0);
+    }
+  }, []);
 
   const handleExerciseTime = (id) => {
-    const cartID = exerciseCarts.find((cart) => cart.id === id);
-    let newTime = parseInt(exerciseTime) + parseInt(cartID.time);
+    const listedCart = exerciseCarts.find((cart) => cart.id === id);
+    let newTime = parseInt(exerciseTime) + parseInt(listedCart.time);
     setExerciseTime(newTime);
     // console.log("cliked", cartID.time);
   };
@@ -46,10 +56,10 @@ const Container = () => {
 
       <div className="calculate-section col-sm-1 col-md-3 bg-dark py-5 mx-auto me-md-0">
         <PhysicianInfo></PhysicianInfo>
-        <AddBreak></AddBreak>
+        <AddBreak setBreakTime={setBreakTime}></AddBreak>
         <h5 className="text-light mt-5 ps-3">Exercise Details</h5>
         <ExerciseTime exerciseTime={exerciseTime}></ExerciseTime>
-        <BreakTme></BreakTme>
+        <BreakTime breakTime={breakTime}></BreakTime>
       </div>
     </div>
   );
